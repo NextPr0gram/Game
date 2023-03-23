@@ -4,8 +4,8 @@ from configs import config
 
 
 class Player(Entity):
-    def __init__(self, pos_x, pos_y, width, height, sprite_group) -> None:
-        super().__init__(pos_x, pos_y, width, height, sprite_group)
+    def __init__(self, pos_x, pos_y, width, height, sprite_group, texture_path=None) -> None:
+        super().__init__(pos_x, pos_y, width, height, sprite_group, texture_path)
 
     def update(self):
         super().update()

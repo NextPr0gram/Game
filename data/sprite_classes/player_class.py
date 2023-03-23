@@ -13,9 +13,9 @@ class Player(Entity):
         keys = pygame.key.get_pressed()
         if keys[config.move_left]:
             self.move_left()
-        elif keys[config.move_right]:
+        if keys[config.move_right]:
             self.move_right()
-        elif keys[config.move_up]:
+        if keys[config.move_up]:
             self.move_up()
-        elif keys[config.move_down]:
+        if keys[config.move_down]:
             self.move_down()
